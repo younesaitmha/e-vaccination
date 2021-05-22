@@ -3,8 +3,9 @@ from flask_moment import Moment
 from flask_migrate import Migrate
 import logging
 from logging import Formatter, FileHandler
+from flask_login import LoginManager
 
-from models import db
+from models import db, bcrypt
 
 
 app = Flask(__name__)
@@ -12,7 +13,11 @@ moment = Moment(app)
 app.config.from_object('config')
 
 #db.init_app(app)
+bcrypt.init_app(app)
 
+login_manager = LoginManager(app)
+login_manager.login_view = "login_page"
+login_manager.login_message_category = "info"
 
 #migrate = Migrate(app, db)
 
