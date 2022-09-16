@@ -12,7 +12,7 @@ Flask-WTF==0.14.3
 greenlet==1.1.0
 itsdangerous==2.0.1
 Jinja2==3.0.1
-Mako==1.1.4
+Mako==1.2.2
 MarkupSafe==2.0.1
 pycparser==2.20
 python-dateutil==2.8.1
