@@ -20,5 +20,5 @@ python-dotenv==0.17.1
 python-editor==1.0.4
 six==1.16.0
 SQLAlchemy==1.4.15
-Werkzeug==2.2.3
+Werkzeug==3.0.1
 WTForms==2.3.3
